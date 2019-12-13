@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  path: ./bin/
+  path: ./bin/ # change this after merge devel branch to master branch of FAS github
 
 
 build:
