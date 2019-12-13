@@ -1,0 +1,56 @@
+{% set name = "HaMStR" %}
+{% set version = "1.0.0" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  # path: ../
+  git_url: https://github.com/trvinh/hamstr_recipe
+  git_depth: 1
+
+build:
+  noarch: generic
+  number: 1
+
+requirements:
+  build:
+    - perl
+    - perl-app-cpanminus
+    - r
+    - pkg-config
+    - wise2
+    - perl-bioperl
+    - perl-bioperl-core
+    - perl-bioperl-run
+    - blast
+    # - blast-legacy
+    - hmmer
+    - clustalw
+    - mafft
+    - muscle
+  run:
+    - perl
+    - perl-app-cpanminus
+    - r
+    - pkg-config
+    - wise2
+    - perl-bioperl
+    - perl-bioperl-core
+    - perl-bioperl-run
+    - blast
+    # - blast-legacy
+    - hmmer
+    - clustalw
+    - mafft
+    - muscle
+
+test:
+  commands:
+    - which setup_hamstr 2>&1
+
+about:
+  home: 'https://github.com/BIONF/HaMStR'
+  license: GPLv3
+  summary: "Feature-aware phylogenetic profiling tool"
