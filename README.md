@@ -1,18 +1,16 @@
-# Conda recipe for HaMStR
+# Conda recipes
 Building conda package
 
 ```
-conda-build conda_recipe
+conda-build recipes/<tool_name>
 ```
 
 Upload package into anaconda cloud
 ```
-anaconda upload path_to_hamstr-version.tar.bz2
+anaconda upload path_to_<tool>-<version>.tar.bz2
 ```
 
-Install hamstr within a conda env
+Install tool within a conda env
 ```
-conda install -c trvinh hamstr
-setup_hamstr
+conda install -c <conda.org account name> <tool name>
 ```
-*Note: change `trvinh` to channel name that hosts hamstr conda package*
