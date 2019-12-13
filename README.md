@@ -21,10 +21,11 @@ mkdir my_channel
 cp /path/to/<tool>-<version>.tar.bz2 my_channel
 conda index my_channel
 ```
-Then, add `my_channel` to `~/.condarc` file by adding this line to the file
+Then, add `my_channel` to `~/.condarc` file by adding one line to your channel into the file
 ```
 channels:
-- file:/path/to/my-conda-channel/
+  - file:/path/to/my_channel/
+  - defaults
 ```
 After that, you can easily install your tool with the command
 ```
