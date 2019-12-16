@@ -25,6 +25,7 @@ Then, add `my_channel` to `~/.condarc` file by adding one line to your channel i
 ```
 channels:
   - file:/path/to/my_channel/
+  - conda.org_account_name
   - defaults
 ```
 After that, you can easily install your tool with the command
