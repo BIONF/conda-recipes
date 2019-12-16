@@ -21,7 +21,7 @@ mkdir my_channel
 cp /path/to/<tool>-<version>.tar.bz2 my_channel
 conda index my_channel
 ```
-Then, add `my_channel` to `~/.condarc` file by adding one line to your channel into the file
+Then, modify `~/.condarc` file to add `my_channel` 
 ```
 channels:
   - file:/path/to/my_channel/
