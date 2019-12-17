@@ -5,7 +5,7 @@ Building conda package
 conda-build recipes/<tool_name>
 ```
 
-Upload package into anaconda cloud
+Upload package into anaconda cloud (need to run `conda login` first to log into your anaconda cloud account)
 ```
 anaconda upload /path/to/<tool>-<version>.tar.bz2
 ```
@@ -36,3 +36,6 @@ conda install <tool name>
 # Current tools that have recipes
 1. [HaMStR](https://github.com/BIONF/HaMStR)
 2. [FAS](https://github.com/BIONF/FAS)
+
+# BIONF in anaconda cloud
+https://anaconda.org/BIONF
