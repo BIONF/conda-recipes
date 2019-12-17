@@ -5,7 +5,7 @@ Building conda package
 conda-build recipes/<tool_name>
 ```
 
-Upload package into anaconda cloud
+Upload package into anaconda cloud (need to run `conda login` first to log into your anaconda cloud account)
 ```
 anaconda upload /path/to/<tool>-<version>.tar.bz2
 ```
