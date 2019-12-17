@@ -37,5 +37,5 @@ conda install <tool name>
 1. [HaMStR](https://github.com/BIONF/HaMStR)
 2. [FAS](https://github.com/BIONF/FAS)
 
-# BIONF anaconda cloud
+# BIONF in anaconda cloud
 https://anaconda.org/BIONF
