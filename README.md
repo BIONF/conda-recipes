@@ -36,3 +36,6 @@ conda install <tool name>
 # Current tools that have recipes
 1. [HaMStR](https://github.com/BIONF/HaMStR)
 2. [FAS](https://github.com/BIONF/FAS)
+
+# BIONF anaconda cloud
+https://anaconda.org/BIONF
