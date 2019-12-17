@@ -7,7 +7,7 @@ package:
 
 source:
   # path: ../
-  git_url: https://github.com/BIONF/conda-recipes/tree/master/recipes/hamstr
+  git_url: https://github.com/BIONF/conda-recipes
   git_depth: 1
 
 build:
@@ -16,20 +16,7 @@ build:
 
 requirements:
   build:
-    - perl
-    - perl-app-cpanminus
-    - r
-    - pkg-config
-    - wise2
-    - perl-bioperl
-    - perl-bioperl-core
-    - perl-bioperl-run
-    - blast
-    # - blast-legacy
-    - hmmer
-    - clustalw
-    - mafft
-    - muscle
+    # - perl
   run:
     - perl
     - perl-app-cpanminus
@@ -40,7 +27,6 @@ requirements:
     - perl-bioperl-core
     - perl-bioperl-run
     - blast
-    # - blast-legacy
     - hmmer
     - clustalw
     - mafft
