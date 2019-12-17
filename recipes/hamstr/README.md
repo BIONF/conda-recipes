@@ -12,7 +12,7 @@ anaconda upload path_to_hamstr-version.tar.bz2
 
 Install hamstr within a conda env
 ```
-conda install -c trvinh hamstr
+conda install -c BIONF hamstr
 setup_hamstr
 ```
-*Note: change `trvinh` to channel name that hosts hamstr conda package*
+*Note: change `BIONF` to channel name that hosts hamstr conda package*
