@@ -21,7 +21,7 @@ mkdir my_channel
 cp /path/to/<tool>-<version>.tar.bz2 my_channel
 conda index my_channel
 ```
-Then, modify `~/.condarc` file to add `my_channel` 
+Then, modify `~/.condarc` file to add `my_channel`
 ```
 channels:
   - file:/path/to/my_channel/
@@ -39,3 +39,8 @@ conda install <tool name>
 
 # BIONF in anaconda cloud
 https://anaconda.org/BIONF
+
+Install tools from BIONF channel with the command
+```
+conda install -c bionf <tool name>
+```
