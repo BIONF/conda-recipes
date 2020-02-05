@@ -48,7 +48,7 @@ cd HaMStR
 echo "-------------------------------------"
 echo "Running setup..."
 CURRENT=$(pwd)
-chmod 755 $CURRENT/bin/setup_conda.sh
-$CURRENT/bin/setup_conda.sh
+chmod 755 $CURRENT/setup_conda.sh
+$CURRENT/setup_conda.sh
 
 exit 1

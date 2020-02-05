@@ -31,6 +31,7 @@ requirements:
     - clustalw
     - mafft
     - muscle
+    - fasta3
 
 test:
   commands:
