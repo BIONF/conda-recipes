@@ -1,4 +1,10 @@
 # Conda recipes
+Add conda repositories
+```
+conda config --add channels bioconda
+conda config --add channels conda-forge
+```
+
 Building conda package
 
 ```
@@ -44,3 +50,6 @@ Install tools from BIONF channel with the command
 ```
 conda install -c bionf <tool name>
 ```
+
+# Contact
+For any questions, please [open an issue on GitHub](https://github.com/BIONF/conda-recipes/issues/new) :-)
