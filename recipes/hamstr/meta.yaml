@@ -1,5 +1,5 @@
 {% set name = "HaMStR" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -20,7 +20,10 @@ requirements:
   run:
     - perl
     - perl-app-cpanminus
-    - r
+    - r >=3.6
+    - r-biocmanager
+    - r-devtools
+    - bioconductor-biostrings
     - pkg-config
     - wise2
     - perl-bioperl

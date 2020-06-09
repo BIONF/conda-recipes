@@ -1,5 +1,5 @@
 {% set name = "FAS" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -22,6 +22,7 @@ requirements:
     - python
     - perl
     - hmmer
+    - tensorflow
 
 test:
   commands:
