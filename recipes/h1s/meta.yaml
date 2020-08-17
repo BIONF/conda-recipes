@@ -1,0 +1,55 @@
+{% set name = "h1s" %}
+{% set version = "2.1.1" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.python.org/packages/source/g/h1s/h1s-{{ version }}.tar.gz
+  sha256: 2c34f87583387ad13e2366d2dfd8328010db683b0b7b7095bb7544655b845298
+
+build:
+  noarch: python
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pip
+  run:
+    - python
+    - perl
+    - perl-app-cpanminus
+    - r >=3.6
+    - r-biocmanager
+    - r-devtools
+    - bioconductor-biostrings
+    - pkg-config
+    - wise2
+    - perl-bioperl
+    - perl-bioperl-core
+    - perl-bioperl-run
+    - blast
+    - hmmer
+    - clustalw
+    - mafft
+    - muscle
+    - fasta3
+
+test:
+  commands:
+    - h1s -h 2>&1
+    - setup1s -h 2>&1
+    - checkData1s -h 2>&1
+    - addTaxon1s -h 2>&1
+    - addTaxa1s -h 2>&1
+    - merge1sOutput -h 2>&1
+    - remove1s -h 2>&1
+
+about:
+  home: 'https://github.com/BIONF/HaMStR'
+  license: GPLv3
+  summary: "Feature-aware orthology prediction tool"
