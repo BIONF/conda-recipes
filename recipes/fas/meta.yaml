@@ -1,17 +1,18 @@
 {% set name = "FAS" %}
-{% set version = "1.0.2" %}
+{% set version = "1.2.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  git_url: https://github.com/BIONF/FAS
-  git_depth: 1
+  url: https://pypi.python.org/packages/source/g/greedyFAS/greedyFAS-{{ version }}.tar.gz
+  sha256: 5b987a26db1b89b2100ca420c4acba7514374a21c576c98f1281cedf974706c5
 
 build:
   noarch: python
   number: 0
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
