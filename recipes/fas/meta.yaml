@@ -24,11 +24,16 @@ requirements:
     - perl
     - hmmer
     - tensorflow
+    - Biopython
+    - tqdm
 
 test:
   commands:
-    - greedyFAS -h 2>&1
-    - parseInterPro -h 2>&1
+    - calcFAS -h 2>&1
+    - hamstrFAS -h 2>&1
+    - annoFAS -h 2>&1
+    - annoParserFAS -h 2>&1
+    - prepareFAS -h 2>&1
 
 about:
   home: 'https://github.com/BIONF/FAS'
